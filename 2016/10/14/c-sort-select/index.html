@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>博客</title>
+  <title>选择排序 | 博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="选择排序12345678910111213141516171819202122void f34(int A[],int n) &amp;#123;	int temp,min;	for(int i =0;i&amp;lt;n;i++) &amp;#123;		min=i;		//find min.		for(int j=i+1;j&amp;lt;n;j++) &amp;#123;			if(A[j]&amp;lt;A[min]) &amp;#123;">
+  <meta name="description" content="12345678910111213141516171819202122void f34(int A[],int n) &amp;#123;	int temp,min;	for(int i =0;i&amp;lt;n;i++) &amp;#123;		min=i;		//find min.		for(int j=i+1;j&amp;lt;n;j++) &amp;#123;			if(A[j]&amp;lt;A[min]) &amp;#123;				mi">
 <meta property="og:type" content="article">
-<meta property="og:title" content="博客">
+<meta property="og:title" content="选择排序">
 <meta property="og:url" content="https://insight1989.github.io/2016/10/14/c-sort-select/index.html">
 <meta property="og:site_name" content="博客">
-<meta property="og:description" content="选择排序12345678910111213141516171819202122void f34(int A[],int n) &amp;#123;	int temp,min;	for(int i =0;i&amp;lt;n;i++) &amp;#123;		min=i;		//find min.		for(int j=i+1;j&amp;lt;n;j++) &amp;#123;			if(A[j]&amp;lt;A[min]) &amp;#123;">
-<meta property="og:updated_time" content="2016-10-14T13:14:06.000Z">
+<meta property="og:description" content="12345678910111213141516171819202122void f34(int A[],int n) &amp;#123;	int temp,min;	for(int i =0;i&amp;lt;n;i++) &amp;#123;		min=i;		//find min.		for(int j=i+1;j&amp;lt;n;j++) &amp;#123;			if(A[j]&amp;lt;A[min]) &amp;#123;				mi">
+<meta property="og:updated_time" content="2016-10-16T13:37:22.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="博客">
-<meta name="twitter:description" content="选择排序12345678910111213141516171819202122void f34(int A[],int n) &amp;#123;	int temp,min;	for(int i =0;i&amp;lt;n;i++) &amp;#123;		min=i;		//find min.		for(int j=i+1;j&amp;lt;n;j++) &amp;#123;			if(A[j]&amp;lt;A[min]) &amp;#123;">
+<meta name="twitter:title" content="选择排序">
+<meta name="twitter:description" content="12345678910111213141516171819202122void f34(int A[],int n) &amp;#123;	int temp,min;	for(int i =0;i&amp;lt;n;i++) &amp;#123;		min=i;		//find min.		for(int j=i+1;j&amp;lt;n;j++) &amp;#123;			if(A[j]&amp;lt;A[min]) &amp;#123;				mi">
   
     <link rel="alternate" href="/atom.xml" title="博客" type="application/atom+xml">
   
@@ -77,14 +77,24 @@
   <div class="article-inner">
     
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      选择排序
+    </h1>
+  
+
+      </header>
+    
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="选择排序"><a href="#选择排序" class="headerlink" title="选择排序"></a>选择排序</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">f34</span><span class="params">(<span class="keyword">int</span> A[],<span class="keyword">int</span> n)</span> </span>&#123;</div><div class="line">	<span class="keyword">int</span> temp,min;</div><div class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i =<span class="number">0</span>;i&lt;n;i++) &#123;</div><div class="line"></div><div class="line">		min=i;</div><div class="line"></div><div class="line">		<span class="comment">//find min.</span></div><div class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j=i+<span class="number">1</span>;j&lt;n;j++) &#123;</div><div class="line"></div><div class="line">			<span class="keyword">if</span>(A[j]&lt;A[min]) &#123;</div><div class="line">				min = j;</div><div class="line">			&#125;</div><div class="line">		&#125;</div><div class="line"></div><div class="line">		<span class="keyword">if</span>(min!=i) &#123;</div><div class="line">			temp = A[i];</div><div class="line">			A[i] = A[min];</div><div class="line">			arr[min] = temp;</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+        <figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">f34</span><span class="params">(<span class="keyword">int</span> A[],<span class="keyword">int</span> n)</span> </span>&#123;</div><div class="line">	<span class="keyword">int</span> temp,min;</div><div class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i =<span class="number">0</span>;i&lt;n;i++) &#123;</div><div class="line"></div><div class="line">		min=i;</div><div class="line"></div><div class="line">		<span class="comment">//find min.</span></div><div class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j=i+<span class="number">1</span>;j&lt;n;j++) &#123;</div><div class="line"></div><div class="line">			<span class="keyword">if</span>(A[j]&lt;A[min]) &#123;</div><div class="line">				min = j;</div><div class="line">			&#125;</div><div class="line">		&#125;</div><div class="line"></div><div class="line">		<span class="keyword">if</span>(min!=i) &#123;</div><div class="line">			temp = A[i];</div><div class="line">			A[i] = A[min];</div><div class="line">			arr[min] = temp;</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://insight1989.github.io/2016/10/14/c-sort-select/" data-id="ciucod1wr0001bnfyo41t2e8m" class="article-share-link">Share</a>
+      <a data-url="https://insight1989.github.io/2016/10/14/c-sort-select/" data-id="ciucofhgv0001c3fywxugniad" class="article-share-link">Share</a>
       
       
     </footer>
@@ -156,11 +166,11 @@
       <ul>
         
           <li>
-            <a href="/2016/10/16/database-jiaokeshu/">(no title)</a>
+            <a href="/2016/10/16/dba-yuanli-wusunfenjie/">(no title)</a>
           </li>
         
           <li>
-            <a href="/2016/10/16/dba-yuanli-wusunfenjie/">(no title)</a>
+            <a href="/2016/10/16/database-jiaokeshu/">数据库范式</a>
           </li>
         
           <li>
@@ -168,7 +178,7 @@
           </li>
         
           <li>
-            <a href="/2016/10/14/c-sort-select/">(no title)</a>
+            <a href="/2016/10/14/c-sort-select/">选择排序</a>
           </li>
         
           <li>
